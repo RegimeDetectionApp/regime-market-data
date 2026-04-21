@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "regime-market-data"
+version = "0.1.0"
+description = "Market data acquisition anti-corruption layer for regime detection"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "yfinance>=0.2.30",
+    "pandas>=2.0",
+]
+
+[project.urls]
+Repository = "https://github.com/govid13427742/regime-market-data"
+
+[tool.setuptools.packages.find]
+include = ["regime_market_data*"]
